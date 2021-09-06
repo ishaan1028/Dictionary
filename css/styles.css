@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fcde67;
+  color: #030e12;
+  position: relative;
+}
+header {
+  border-top: 2px solid #030e12;
+}
+header .hr {
+  padding: 20px 0 5px 0;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 3rem;
+  text-decoration: underline;
+  filter: drop-shadow(2px 2px grey);
+}
+
+.sr {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #030e12;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"] {
+  padding: 3px 30px;
+  border: 1px solid #030e12;
+  border-radius: 15px;
+  text-align: center;
+  margin-right: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 3px 20px;
+  border: 2px solid #e7c024;
+
+  border-radius: 15px;
+  text-align: center;
+  margin: 0 2px;
+  background-color: #f0f0f0;
+  background-color: #030e12;
+
+  color: #fcde67;
+
+  font-weight: 600;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #cd3131;
+  color: #fcde67;
+
+  border: 2px solid #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.field {
+  min-height: 80px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cd31316b;
+}
+
+.field p {
+  font-size: 1.2rem;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.field p span {
+  display: inline-block;
+}
+
+.field p span:first-letter {
+  text-transform: capitalize;
+}
+
+.field i {
+  color: #cd3131;
+  font-size: 1.2rem;
+
+  vertical-align: middle;
+}
+
+.field h2 {
+  margin: 0;
+}
+
+.field audio {
+  margin-top: 10px;
+}
+
+#phspan {
+  color: #cd3131;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 4px;
+}
+
+.details {
+  margin-bottom: 30px;
+}
+
+footer {
+  text-align: center;
+  color: #cd3131;
+
+  padding: 10px 0;
+  border-bottom: 2px solid #030e12;
+}
+
+footer p {
+  margin: 0;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 530px) {
+  input[type="text"] {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  .details {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  input[type="text"] {
+    display: block;
+    margin-bottom: 20px;
+    padding: 3px 10px;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  audio {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .field h2 {
+    font-size: 1.8rem;
+  }
+
+  .field p {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 0 30px;
+  }
+}
